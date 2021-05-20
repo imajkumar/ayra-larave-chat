@@ -1,0 +1,32 @@
+{
+    "name": "ayra/chatapps",
+    "description": "A package for Laravel PHP Framework ",
+    "type": "library",
+    "keywords": ["laravel", "messenger", "conversations", "chat", "php", "pusher", "realtime", "real-time"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "okay",
+            "email": "dd@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "pusher/pusher-php-server": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chatify\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chatify\\ChatifyServiceProvider"
+            ],
+            "aliases": {
+                "Chatify": "Chatify\\Facades\\ChatifyMessenger"
+            }
+        }
+    }
+}
